@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 利用iframe嵌入一个普通网页 -->
+    <!-- <iframe src="https://www.bilibili.com/" width="900" height="300" frameborder="1"></iframe> -->
+
+    <!-- 与超链接的target属性配合使用 -->
+    <a href="https://www.bilibili.com/" target="container">点我看B站</a>
+    <a href="https://www.taobao.com/" target="container">点我看淘宝</a><br>
+
+    <!-- 与表单的target属性配合使用 -->
+    <form action="https://so.toutiao.com/search" target="container">
+        <input type="text" name="keyword">
+        <button>提交</button>
+    </form>
+
+    <iframe name="container" frameborder="0" width="900" height="300"></iframe>
+</body>
+
+</html>
