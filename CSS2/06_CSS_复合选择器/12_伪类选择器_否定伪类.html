@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>否定伪类</title>
+    <style>
+        /* :not(选择器) 排除满足括号中条件的元素 */
+        /* 选中的是div的儿子p元素，但是排除class属性值为‘fail’的 */
+        /* div>p:not(.fail) {
+            color: red
+        } */
+
+        /* 选中的是div的儿子p元素，但是排除title属性值为‘你要加油’的 */
+        /* div>p:not([title^='你要加油']) {
+            color: red
+        } */
+
+        /* 选中的是div的儿子p元素，但是排除第一个儿子p元素 */
+        div>p:not(:first-of-type) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>张三：98分</p>
+        <p>张三：98分</p>
+        <p>张三：98分</p>
+        <p class="fail" title="你要加油啊！王五">王五：48分</p>
+        <p class="fail" title="你要加油啊！赵六">赵六：48分</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语言伪类</title>
+    <!-- :lang() 根据指定的语言选择元素（本质是看lang属性的值 -->
+    <style>
+        div:lang(en) {
+            color: red;
+        }
+
+        div:lang(zh-CN) {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>尚硅谷1</div>
+    <div lang="en">atguigu</div>
+    <p>前端</p>
+    <span>你好</span>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目标伪类</title>
+    <!-- 选中锚点指定的元素 -->
+    <style>
+        div {
+            height: 300px;
+            background-color: gray;
+        }
+
+        div:target {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#one">跳转到第1个</a>
+    <a href="#two">跳转到第2个</a>
+    <a href="#three">跳转到第3个</a>
+    <a href="#four">跳转到第4个</a>
+    <a href="#five">跳转到第5个</a>
+    <a href="#six">跳转到第6个</a>
+    <div id="one">第1个</div><br>
+    <div id="two">第2个</div><br>
+    <div id="three">第3个</div><br>
+    <div id="four">第4个</div><br>
+    <div id="five">第5个</div><br>
+    <div id="six">第6个</div><br>
+</body>
+
+</html>

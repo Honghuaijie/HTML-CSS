@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        /* 第一种 只看存不存在该属性，不看属性的值 */
+        /* [title] {
+            color: red;
+        } */
+        /* 第二种 选中具有title属性，并且值为nk的元素 */
+        /* [title="nk"] {
+            color: red;
+        } */
+
+        /* 第三种 选中具有title属性，并且属性值以a开头 */
+        /* [title^="x"] {
+            color: red;
+        } */
+
+        /* 第四种 选中具有title属性，并且属性值以x结尾 */
+        /* [title$="x"] {
+            color: red;
+        } */
+
+        /* 第五种 选中具有title属性，并且属性值中包含b */
+        [title*="b"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div title="nk">南科院</div>
+    <div title="nk2">南科院</div>
+    <div title="abc">南科院</div>
+    <div title="abx">南科院</div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兄弟选择器</title>
+    <style>
+        /* 只能选中兄弟，不能选中自己 */
+        /* 和div紧紧相邻的兄弟p,指向下看——相邻兄弟选择器 */
+        /* div+p {
+            color: red;
+        } */
+
+        /* 选中div后所有兄弟p元素——通用兄弟选择器 */
+        div~p {
+            color: red;
+        }
+
+        li+li {
+            color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 不会变红 -->
+    <p>JAVA</p>
+    <div>尚硅谷</div>
+    <h2>大数据</h2>
+    <p>前端</p>
+    <p>前端</p>
+
+    <ul>
+        <li>主页</li>
+        <li>秒杀</li>
+        <li>订单</li>
+        <li>我的</li>
+    </ul>
+</body>
+
+</html>
